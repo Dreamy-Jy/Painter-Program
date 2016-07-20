@@ -31,4 +31,5 @@ def keyPressed():
 def saveImg():
     time = "{}:{}:{}'milsecs {}".format(hour(),minute(),second(), millis())
     name = 'date; '+ date +', time; '+ time +".png"
+    save(name)
     print (name)
