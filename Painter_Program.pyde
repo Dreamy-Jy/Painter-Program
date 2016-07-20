@@ -3,7 +3,7 @@ by Jordane Thomas,
 """
 from random import *
 
-date =  "{}'{}'{}".format(month(), day(), year()) # format mm/dd/yyyy
+date =  "{}_{}_{}".format(month(), day(), year()) # format mm/dd/yyyy
 saveNum = 0
 
 def setup():
@@ -27,9 +27,9 @@ def keyPressed():
         print('up')
     if keyCode == DOWN:
         print('down')
-# sets an image name based on the date, save number, an a four letter code 
+# sets an image name based on the date, save 
 def saveImg():
-    time = "{}:{}:{}'milsecs {}".format(hour(),minute(),second(), millis())
+    time = "{}_{}_{}_milsecs {}".format(hour(),minute(),second(), millis())
     name = 'date; '+ date +', time; '+ time +".png"
     save(name)
     print (name)
