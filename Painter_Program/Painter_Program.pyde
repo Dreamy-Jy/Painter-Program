@@ -22,8 +22,10 @@ considerations
 """
 def draw():
     global lenCirc, widCirc
+    background(255)
     fill(randint(0,255),randint(0,255),randint(0,255))
     pointer.draw(mouseX,mouseY)
+    
 
 def keyPressed():
     global incrCirc, lenCirc, widCirc
